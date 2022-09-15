@@ -117,3 +117,63 @@ strong {
 .warning {
   color: var(--color-warning);
 }
+/* -------ASIDE BAR----------- */
+aside {
+  height: 100vh;
+}
+aside .logo {
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+aside .logo img {
+  width: 2rem;
+}
+aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  position: relative;
+  top: 3rem;
+}
+aside .sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-info-dark);
+  height: 3.5rem;
+  padding-left: 2rem;
+  transition: var(--transition);
+  position: relative;
+}
+aside .sidebar a:hover {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+}
+aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+aside .sidebar a::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: var(--color-primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: var(--transition);
+}
+aside .sidebar a:hover::before {
+  opacity: 1;
+}
+aside .sidebar a span i {
+  font-size: 1.2rem;
+}
+aside .sidebar h3 {
+  font-weight: 500;
+}
+/* -------ASIDE BAR DONE----------- */
